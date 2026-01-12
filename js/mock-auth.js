@@ -40,6 +40,6 @@ export function loginUser(email, password) {
   location.href = 'dashboard.html';
 }
 
-// إذا تحب تستخدم كود مباشر مع أزرار HTML
+// ربط الدوال بالنافذة للـ onclick
 window.registerUser = registerUser;
 window.loginUser = loginUser;
