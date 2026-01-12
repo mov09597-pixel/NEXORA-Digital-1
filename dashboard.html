@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXORA Digital - Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>NEXORA Digital Dashboard</h1>
+    <p>The owner: Mohamed Amr</p>
+  </header>
+
+  <!-- Wallet العميل -->
+  <section class="wallet-section">
+    <h2>Your Wallet</h2>
+    <p>Balance: $<span id="wallet_balance">0</span></p>
+  </section>
+
+  <!-- Wallet المالك -->
+  <section class="wallet-section">
+    <h2>Owner Wallet</h2>
+    <p>Balance: $<span id="owner_wallet">0</span></p>
+  </section>
+
+  <!-- إنشاء أوردر -->
+  <section class="order-section">
+    <h2>Create New Order</h2>
+    <input id="project_name" placeholder="Project Name">
+    <input id="description" placeholder="Description">
+    <input id="category" placeholder="Category">
+    <input id="price" placeholder="Price">
+    <button onclick="createOrder()">Submit Order</button>
+  </section>
+
+  <!-- عرض الأوردرات -->
+  <section class="orders-list">
+    <h2>Your Orders</h2>
+    <ul id="order_list"></ul>
+  </section>
+
+  <script type="module" src="js/dashboard.js"></script>
+  <script type="module" src="js/mock-auth.js"></script>
+</body>
+</html>
